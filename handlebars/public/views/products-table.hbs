@@ -1,6 +1,6 @@
 <div>
 
-      <div class="container py-3">
+      {{!-- <div class="container py-3">
         <header>
           <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
             <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
@@ -11,7 +11,7 @@
             </nav>
           </div>
         </header>
-      </div>
+      </div> --}}
 
       <div class="container-lg p-4">
         <table class="table table-striped">
@@ -22,8 +22,8 @@
                 <th scope="col">URL Foto</th>
               </tr>  
             </thead>
-               {{#if productos.length}}
-               {{#each productos}}
+               {{#if products.length}}
+               {{#each products}}
             <tbody>
               <tr>
                 <td>{{this.title}}</td>
@@ -31,8 +31,13 @@
                 <td><img height="72px" width="72px" src={{this.thumbnail}} /></td>
               </tr>
                 {{/each}}
-                {{/if}}
+              
             </tbody>
+               {{else}}
+                    <div>
+                        No hay productos
+                    </div>
+                {{/if}}
 
         </table>
       </div>

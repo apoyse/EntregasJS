@@ -6,19 +6,7 @@
 
 class ContenedorMemoria {
     constructor(){
-        this.elements = [
-            {
-                title: "Calculadora niños",
-                price: 875,
-                thumbnail: "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png"
-            },
-            {
-                title: "Camión volcador",
-                price: 1600,
-                thumbnail: "https://cdn3.iconfinder.com/data/icons/transportation-14/512/Transportation_unloading_truck-256.png"
-
-            }
-        ]
+        this.elements = []
     }
 
     getAll() {
